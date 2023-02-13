@@ -1,0 +1,31 @@
+html,
+body {
+  scroll-behavior: smooth;
+  margin: 0%;
+  background-color: rgb(25, 37, 55);
+}
+
+/* header style */
+.header {
+  border: 2px solid white;
+  height: 6rem;
+}
+
+.left {
+  border: 2px solid green;
+  height: 6rem;
+  width: 20%;
+  float: left;
+}
+
+.right {
+  border: 2px solid yellow;
+  height: 6rem;
+  width: 79.5%;
+  float: right;
+}
+
+.right h3{
+    float: left;
+    padding-right: 2rem;
+}
