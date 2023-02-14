@@ -10,6 +10,7 @@ body {
   height: 7rem;
   display: flex;
   background-color: #c9efc7;
+  margin: 0%;
 }
 
 .left {
@@ -87,19 +88,54 @@ body {
   width: 40%;
 }
 
+/* mobile menu style */
 .mright {
   display: none;
 }
 
-@media screen and (max-width:300px) {
-  .header{
+.mobile-menu {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 0vh;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.mlinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.mlinks h3 {
+  font-family: "montserrat alternates";
+  font-size: xx-large;
+  color: white;
+}
+
+.mlinks a:link,
+.mlink a:active,
+.mlink a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+/* media queries for header and mobile menu */
+@media screen and (max-width: 300px) {
+  .header {
     height: 5rem;
   }
-  .left{
+  .left {
     padding-left: 20vw;
     height: 5rem;
   }
-  .left h1{
+  .left h1 {
     font-size: 25px;
   }
   .right {
@@ -113,18 +149,28 @@ body {
     align-items: center;
     padding-right: 5vw;
   }
-  .mright span{
-    font-size: 20px;
+  .mright #obtn {
+    display: block;
+    font-size: 25px;
     font-weight: bold;
     cursor: pointer;
   }
+  .mright #cbtn {
+    display: none;
+    font-size: 45px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .mlinks h3{
+    font-size: 25px;
+  }
 }
 
-@media screen and (min-width:301px) and (max-width:600px) {
-  .left{
+@media screen and (min-width: 301px) and (max-width: 600px) {
+  .left {
     padding-left: 15vw;
   }
-  .left h1{
+  .left h1 {
     font-size: 30px;
   }
   .right {
@@ -138,18 +184,25 @@ body {
     align-items: center;
     padding-right: 5vw;
   }
-  .mright span{
+  .mright #obtn {
+    display: block;
     font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .mright #cbtn {
+    display: none;
+    font-size: 45px;
     font-weight: bold;
     cursor: pointer;
   }
 }
 
-@media screen and (min-width:601px) and (max-width: 1000px) {
-  .left{
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .left {
     padding-left: 6vw;
   }
-  .left h1{
+  .left h1 {
     font-size: 35px;
   }
   .right {
@@ -163,21 +216,28 @@ body {
     align-items: center;
     padding-right: 5vw;
   }
-  .mright span{
+  .mright #obtn {
+    display: block;
     font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .mright #cbtn {
+    display: none;
+    font-size: 45px;
     font-weight: bold;
     cursor: pointer;
   }
 }
 
-@media screen and (min-width:1001px) and (max-width:1200px) {
-  .left{
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+  .left {
     padding-left: 2rem;
   }
-  .left h1{
+  .left h1 {
     font-size: 40px;
   }
-  .right h3{
+  .right h3 {
     padding-right: 2rem;
     font-size: large;
   }
