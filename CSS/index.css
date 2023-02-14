@@ -86,3 +86,99 @@ body {
 .right a:hover::before {
   width: 40%;
 }
+
+.mright {
+  display: none;
+}
+
+@media screen and (max-width:300px) {
+  .header{
+    height: 5rem;
+  }
+  .left{
+    padding-left: 20vw;
+    height: 5rem;
+  }
+  .left h1{
+    font-size: 25px;
+  }
+  .right {
+    display: none;
+  }
+  .mright {
+    height: 5rem;
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 5vw;
+  }
+  .mright span{
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width:301px) and (max-width:600px) {
+  .left{
+    padding-left: 15vw;
+  }
+  .left h1{
+    font-size: 30px;
+  }
+  .right {
+    display: none;
+  }
+  .mright {
+    height: 7rem;
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 5vw;
+  }
+  .mright span{
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width:601px) and (max-width: 1000px) {
+  .left{
+    padding-left: 6vw;
+  }
+  .left h1{
+    font-size: 35px;
+  }
+  .right {
+    display: none;
+  }
+  .mright {
+    height: 7rem;
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 5vw;
+  }
+  .mright span{
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width:1001px) and (max-width:1200px) {
+  .left{
+    padding-left: 2rem;
+  }
+  .left h1{
+    font-size: 40px;
+  }
+  .right h3{
+    padding-right: 2rem;
+    font-size: large;
+  }
+}
