@@ -305,7 +305,7 @@ body {
 }
 
 /* info */
-.blocks-container{
+.blocks-container {
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -315,12 +315,12 @@ body {
   border-radius: 10px;
 }
 
-.blocks-container img{
+.blocks-container img {
   height: 18.75rem;
   width: 18.75rem;
 }
 
-.blocks-container h4{
+.blocks-container h4 {
   font-family: "josefin sans";
   font-size: larger;
   line-height: 120%;
@@ -328,7 +328,7 @@ body {
   color: #454545;
 }
 
-.block1{
+.block1 {
   width: 100%;
   background-color: white;
   display: flex;
@@ -338,7 +338,7 @@ body {
   border-top-left-radius: 10px;
 }
 
-.block2{
+.block2 {
   width: 100%;
   background-color: lightgray;
   display: flex;
@@ -346,7 +346,7 @@ body {
   justify-content: center;
 }
 
-.block3{
+.block3 {
   width: 100%;
   background-color: white;
   display: flex;
@@ -356,7 +356,7 @@ body {
   border-bottom-right-radius: 10px;
 }
 
-.t{
+.t {
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -366,16 +366,77 @@ body {
   padding: 3%;
 }
 
-.t h1{
+.t h1 {
   color: #454545;
   font-family: "raleway";
   font-size: xx-large;
+  text-align: left;
 }
 
-.t span{
+.t span {
   font-family: "poppins";
 }
 
-.i{
+.i {
   padding: 3%;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 300px) {
+  .blocks-container img{
+    height: 10rem;
+    width: 10rem;
+  }
+  .blocks-container h4{
+    font-size: small;
+  }
+  .block1,
+  .block2,
+  .block3 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .t{
+    align-items: center;
+  }
+  .t h1{
+    font-size: x-large;
+    text-align: center;
+  }
+  .i{
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (min-width:301px) and (max-width: 750px) {
+  .blocks-container img{
+    height: 15rem;
+    width: 15rem;
+  }
+  .blocks-container h4{
+    font-size: medium;
+  }
+  .block1,
+  .block2,
+  .block3 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .t{
+    align-items: center;
+  }
+  .t h1{
+    font-size: xx-large;
+    text-align: center;
+  }
+  .i{
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (min-width:751px) and (max-width:1000px) {
+  .block1 h4{
+    font-size: medium;
+  }
 }
