@@ -245,9 +245,8 @@ body {
 }
 
 /* main heading */
-/*     background: linear-gradient(to top left, #aff1da 0%, #f9ea8f 100%) */
 
-.title{
+.title {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -255,52 +254,128 @@ body {
   margin-top: 5vw;
 }
 
-.title h1{
+.title h1 {
   color: cornsilk;
   font-family: "cinzel decorative";
   font-size: 50px;
 }
 
-.title hr{
+.title hr {
   width: 65%;
   height: 3px;
   border-radius: 9999px;
   background-color: cornsilk;
 }
 
-@media screen and (max-width:300px) {
-  .title{
+@media screen and (max-width: 300px) {
+  .title {
     margin-top: 10vw;
   }
-  .title h1{
+  .title h1 {
     font-size: x-large;
   }
-  .title hr{
+  .title hr {
     height: 1px;
     width: 50%;
   }
 }
 
-@media screen and (min-width:301px) and (max-width:600px) {
-  .title{
+@media screen and (min-width: 301px) and (max-width: 600px) {
+  .title {
     margin-top: 6vw;
   }
-  .title h1{
+  .title h1 {
     font-size: xx-large;
   }
-  .title hr{
-    width:55%;
+  .title hr {
+    width: 55%;
   }
 }
 
-@media screen and (min-width:601px) and (max-width:1000px) {
-  .title{
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .title {
     margin-top: 10vw;
   }
-  .title h1{
+  .title h1 {
     font-size: 50px;
   }
-  .title hr{
-    width:65%;
+  .title hr {
+    width: 65%;
   }
+}
+
+/* info */
+.blocks-container{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 5vw;
+  border-radius: 10px;
+}
+
+.blocks-container img{
+  height: 18.75rem;
+  width: 18.75rem;
+}
+
+.blocks-container h4{
+  font-family: "josefin sans";
+  font-size: larger;
+  line-height: 120%;
+  font-weight: 600;
+  color: #454545;
+}
+
+.block1{
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.block2{
+  width: 100%;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.block3{
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.t{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  text-align: justify;
+  width: 65%;
+  padding: 3%;
+}
+
+.t h1{
+  color: #454545;
+  font-family: "raleway";
+  font-size: xx-large;
+}
+
+.t span{
+  font-family: "poppins";
+}
+
+.i{
+  padding: 3%;
 }
