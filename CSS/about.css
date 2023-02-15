@@ -103,6 +103,7 @@ body {
   overflow-y: hidden;
   z-index: 1;
   transition: 0.3s ease-in-out;
+  position: fixed;
 }
 
 .mlinks {
@@ -240,5 +241,66 @@ body {
   .right h3 {
     padding-right: 2rem;
     font-size: large;
+  }
+}
+
+/* main heading */
+/*     background: linear-gradient(to top left, #aff1da 0%, #f9ea8f 100%) */
+
+.title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vw;
+}
+
+.title h1{
+  color: cornsilk;
+  font-family: "cinzel decorative";
+  font-size: 50px;
+}
+
+.title hr{
+  width: 65%;
+  height: 3px;
+  border-radius: 9999px;
+  background-color: cornsilk;
+}
+
+@media screen and (max-width:300px) {
+  .title{
+    margin-top: 10vw;
+  }
+  .title h1{
+    font-size: x-large;
+  }
+  .title hr{
+    height: 1px;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width:301px) and (max-width:600px) {
+  .title{
+    margin-top: 6vw;
+  }
+  .title h1{
+    font-size: xx-large;
+  }
+  .title hr{
+    width:55%;
+  }
+}
+
+@media screen and (min-width:601px) and (max-width:1000px) {
+  .title{
+    margin-top: 10vw;
+  }
+  .title h1{
+    font-size: 50px;
+  }
+  .title hr{
+    width:65%;
   }
 }

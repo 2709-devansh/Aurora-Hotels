@@ -103,6 +103,7 @@ body {
   overflow-y: hidden;
   z-index: 1;
   transition: 0.3s ease-in-out;
+  position: fixed;
 }
 
 .mlinks {
