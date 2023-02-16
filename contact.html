@@ -38,6 +38,11 @@
       src="https://kit.fontawesome.com/cacf29784e.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.js"></script>
+    <link
+      href="https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.css"
+      rel="stylesheet"
+    />
     <title>Contact Us</title>
   </head>
   <body>
@@ -113,7 +118,13 @@
       </div>
     </div>
 
-    <!-- <div class="footer">
+    <div class="map-container">
+      <div id="map">
+        <script src="JS/contact-map.js"></script>
+      </div>
+    </div>
+
+    <div class="footer">
       <div class="footer_left">
         <h3>&#169 Aurora Hotels. All Rights Reserved</h3>
       </div>
@@ -134,7 +145,7 @@
           <span><i class="fa fa-youtube youtube"></i></span>
         </a>
       </div>
-    </div> -->
+    </div>
 
     <script src="JS/menu.js"></script>
   </body>
