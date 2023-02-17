@@ -5,19 +5,99 @@ body {
   background-color: rgb(25, 37, 55);
 }
 
+/* keyframes */
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 /* header style */
 .header {
   height: 7rem;
   display: flex;
   background-color: #c9efc7;
   margin: 0%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .left {
   height: 7rem;
   width: 20%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -29,6 +109,18 @@ body {
   font-size: 45px;
   border: 3px solid;
   padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 2vw;
+}
+
+.left h1 img {
+  height: 3rem;
+}
+
+.left h1 span {
+  margin-left: 0.5vw;
 }
 
 .right {
@@ -139,6 +231,10 @@ body {
   .left h1 {
     font-size: 25px;
   }
+  .left h1 img {
+    height: 2rem;
+    display: none;
+  }
   .right {
     display: none;
   }
@@ -174,6 +270,10 @@ body {
   .left h1 {
     font-size: 30px;
   }
+  .left h1 img {
+    height: 2rem;
+    display: none;
+  }
   .right {
     display: none;
   }
@@ -201,10 +301,13 @@ body {
 
 @media screen and (min-width: 601px) and (max-width: 1000px) {
   .left {
-    padding-left: 6vw;
+    padding-left: 10vw;
   }
   .left h1 {
-    font-size: 35px;
+    font-size: 42px;
+  }
+  .left h1 img {
+    height: 3rem;
   }
   .right {
     display: none;
@@ -258,6 +361,8 @@ body {
   background-color: white;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  -webkit-animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .form h1 {
@@ -340,6 +445,8 @@ body {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: lightgray;
+  -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .info h1 {
@@ -381,11 +488,11 @@ body {
   padding-bottom: 3%;
 }
 
-@media screen and (min-width:1201px) and (max-width:1400px) {
-  .r4{
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .r4 {
     padding-top: 6%;
   }
-  .r4 input{
+  .r4 input {
     width: 35%;
     padding-top: 2.5%;
     padding-bottom: 2.5%;
@@ -772,25 +879,25 @@ body {
 }
 
 /* map */
-.map-container{
+.map-container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 10vh;
 }
 
-#map{
+#map {
   width: 95vw;
   height: 500px;
   margin-top: 10vh;
   border-radius: 5px;
 }
 
-@media screen and (max-width:300px) {
-  .map-container{
+@media screen and (max-width: 300px) {
+  .map-container {
     margin-bottom: 5vh;
   }
-  #map{
+  #map {
     height: 300px;
     margin-top: 0vh;
     border-top-right-radius: 0px;
@@ -798,17 +905,17 @@ body {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
   }
-  .info{
+  .info {
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
   }
 }
 
-@media screen and (min-width:301px) and (max-width:600px) {
-  .map-container{
+@media screen and (min-width: 301px) and (max-width: 600px) {
+  .map-container {
     margin-bottom: 5vh;
   }
-  #map{
+  #map {
     height: 300px;
     margin-top: 0vh;
     border-top-right-radius: 0px;
@@ -816,45 +923,48 @@ body {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
   }
-  .info{
+  .info {
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
   }
 }
 
-@media screen and (min-width:601px) and (max-width:1200px) {
-  .map-container{
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .map-container {
     margin-bottom: 7vh;
   }
-  #map{
+  #map {
     margin-top: 0vh;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
   }
-  .info{
+  .info {
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
   }
 }
 
-@media screen and (min-width:1201px) {
-  .map-container{
+@media screen and (min-width: 1201px) {
+  .map-container {
     margin-bottom: 7vh;
+    -webkit-animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
-  #map{
+  #map {
     margin-top: 0vh;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
   }
-  .info{
+  .info {
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
   }
-  .form{
+  .form {
     border-bottom-left-radius: 0px;
   }
 }

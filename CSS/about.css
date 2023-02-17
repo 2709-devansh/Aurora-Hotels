@@ -11,13 +11,17 @@ body {
   display: flex;
   background-color: #c9efc7;
   margin: 0%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .left {
   height: 7rem;
   width: 20%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -29,6 +33,18 @@ body {
   font-size: 45px;
   border: 3px solid;
   padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 2vw;
+}
+
+.left h1 img {
+  height: 3rem;
+}
+
+.left h1 span {
+  margin-left: 0.5vw;
 }
 
 .right {
@@ -139,6 +155,10 @@ body {
   .left h1 {
     font-size: 25px;
   }
+  .left h1 img {
+    height: 2rem;
+    display: none;
+  }
   .right {
     display: none;
   }
@@ -174,6 +194,10 @@ body {
   .left h1 {
     font-size: 30px;
   }
+  .left h1 img {
+    height: 2rem;
+    display: none;
+  }
   .right {
     display: none;
   }
@@ -201,10 +225,13 @@ body {
 
 @media screen and (min-width: 601px) and (max-width: 1000px) {
   .left {
-    padding-left: 6vw;
+    padding-left: 10vw;
   }
   .left h1 {
-    font-size: 35px;
+    font-size: 42px;
+  }
+  .left h1 img {
+    height: 3rem;
   }
   .right {
     display: none;
@@ -392,7 +419,7 @@ body {
   border-bottom-right-radius: 10px;
 }
 
-.content-wrapper{
+.content-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -400,7 +427,7 @@ body {
   width: 90%;
 }
 
-.content{
+.content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -409,14 +436,14 @@ body {
   padding: 2%;
 }
 
-.content h2{
+.content h2 {
   color: #454545;
   font-family: "josefin sans";
   font-size: 45px;
   margin-bottom: -5%;
 }
 
-.content h3{
+.content h3 {
   color: #454545;
   font-family: "raleway";
   font-size: x-large;
@@ -446,13 +473,13 @@ body {
   .i {
     margin-bottom: 10%;
   }
-  .content{
+  .content {
     text-align: center;
   }
-  .content h2{
+  .content h2 {
     font-size: small;
   }
-  .content h3{
+  .content h3 {
     font-size: x-small;
   }
 }
@@ -481,13 +508,13 @@ body {
   .i {
     margin-bottom: 10%;
   }
-  .content{
+  .content {
     text-align: center;
   }
-  .content h2{
+  .content h2 {
     font-size: medium;
   }
-  .content h3{
+  .content h3 {
     font-size: small;
   }
 }
@@ -496,13 +523,13 @@ body {
   .block1 h4 {
     font-size: medium;
   }
-  .content{
+  .content {
     text-align: center;
   }
-  .content h2{
+  .content h2 {
     font-size: larger;
   }
-  .content h3{
+  .content h3 {
     font-size: medium;
   }
 }
@@ -794,4 +821,17 @@ body {
   .fa.fa-instagram {
     margin-right: 3rem;
   }
+}
+
+/* scroll reveal animation */
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
 }
