@@ -53,6 +53,7 @@ body {
   display: flex;
   justify-content: end;
   align-items: center;
+  margin-right: 1%;
 }
 
 .right h3 {
@@ -74,12 +75,12 @@ body {
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
-  padding: 2vw 0;
+  padding: 1vw 0 1vw 0;
   position: relative;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 0.8;
   transition: all 0.4s ease-in-out;
+  opacity: 0.8;
 }
 
 .right a:before {
@@ -264,10 +265,23 @@ body {
   }
   .left h1 {
     font-size: 40px;
+    margin-left: 4vw;
   }
   .right h3 {
     padding-right: 2rem;
     font-size: large;
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1300px) {
+  .left h1 {
+    margin-left: 10vw;
+  }
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1500px) {
+  .left h1 {
+    margin-left: 5vw;
   }
 }
 

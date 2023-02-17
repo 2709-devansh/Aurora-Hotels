@@ -1,7 +1,7 @@
 var map = new maplibregl.Map({
   container: "map",
   style: "https://api.maptiler.com/maps/streets/style.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL",
-  center: [-73.993870, 40.719230],
+  center: [72.880020, 19.116980],
   zoom: 4,
   pitch: 40,
   bearing: 20,
@@ -26,11 +26,11 @@ map.on("load", function () {
         {
           type: "Feature",
           properties: {
-            description: "<p style='color: black; font-size:15px; font-family:josefin sans; text-align:center;'> Broome St, NY 10002, California, USA </p>",
+            description: "<p style='color: black; font-size:15px; font-family:josefin sans; text-align:center;'> Marol Maroshi Road, Andheri East, Mumbai, Maharashtra </p>",
           },
           geometry: {
             type: "Point",
-            coordinates: [-73.993870, 40.719230],
+            coordinates: [72.880020, 19.116980],
           },
         },
       ],

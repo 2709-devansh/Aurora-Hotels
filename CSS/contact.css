@@ -129,6 +129,7 @@ body {
   display: flex;
   justify-content: end;
   align-items: center;
+  margin-right: 1%;
 }
 
 .right h3 {
@@ -346,6 +347,19 @@ body {
     font-size: large;
   }
 } 
+
+@media screen and (min-width: 1201px) and (max-width: 1300px) {
+  .left h1 {
+    margin-left: 10vw;
+  }
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1500px) {
+  .left h1 {
+    margin-left: 5vw;
+  }
+}
+
 
 /* contact info and newsletter */
 .container {
