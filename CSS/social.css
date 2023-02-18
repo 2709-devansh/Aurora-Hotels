@@ -340,6 +340,43 @@ body {
   background-color: cornsilk;
 }
 
+@media screen and (max-width: 300px) {
+  .works-header {
+    margin-top: 10vw;
+  }
+  .works-header h1 {
+    font-size: x-large;
+  }
+  .works-header hr {
+    height: 1px;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 301px) and (max-width: 600px) {
+  .works-header {
+    margin-top: 6vw;
+  }
+  .works-header h1 {
+    font-size: xx-large;
+  }
+  .works-header hr {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .works-header {
+    margin-top: 10vw;
+  }
+  .works-header h1 {
+    font-size: 50px;
+  }
+  .works-header hr {
+    width: 65%;
+  }
+}
+
 /* flip cards */
 .cards-container {
   display: flex;
@@ -388,10 +425,14 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-back {
-  transform: rotateY(180deg);  
+  transform: rotateY(180deg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -410,20 +451,24 @@ body {
   background-color: lightgray;
 }
 
-.card-front img{
+.card-front img {
   width: 100%;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  position: absolute;
+  top: 0;
 }
 
-.card-front h3{
+.card-front h3 {
   color: #454545;
   font-family: "raleway";
   font-size: 30px;
   line-height: 150%;
+  position: absolute;
+  top: 67.5%;
 }
 
-.card-back h3{
+.card-back h3 {
   color: #454545;
   font-family: "josefin sans";
   font-size: 20px;
@@ -432,8 +477,165 @@ body {
   font-weight: 600;
 }
 
-.card-back span{
+.card-back span {
   font-weight: 900;
+}
+
+@media screen and (max-width:300px) {
+  .cards-container{
+    margin-top: 5vw;
+  }
+  .row1,.row2{
+    flex-direction: column;
+    margin-top: 0vw;
+  }
+  .flip-card{
+    width: 80%;
+    margin-top: 10vw;
+  }
+  .card-front h3{
+    font-size: 20px;
+  }
+  .card-back h3{
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width:301px) and (max-width:600px) {
+  .cards-container{
+    margin-top: 1vh;
+  }
+  .row1,.row2{
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0vw;
+  }
+  .flip-card{
+    width: 60%;
+    margin-top: 10vw;
+  }
+  .card-front h3{
+    font-size: 20px;
+  }
+  .card-back h3{
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:301px) and (max-width:600px) and (min-height:801px) and (max-height:950px){
+  .cards-container{
+    margin-top: 1vh;
+  }
+  .row1,.row2{
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0vw;
+  }
+  .flip-card{
+    width: 60%;
+    margin-top: 10vw;
+    height: 45vh;
+  }
+  .card-front h3{
+    font-size: 20px;
+  }
+  .card-back h3{
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:501px) and (max-width:600px) and (min-height:701px) and (max-height:800px){
+  .cards-container{
+    margin-top: 1vh;
+  }
+  .row1,.row2{
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0vw;
+  }
+  .flip-card{
+    width: 50%;
+    margin-top: 10vw;
+    height: 50vh;
+  }
+  .card-front h3{
+    font-size: 20px;
+    top: 72.5%;
+  }
+  .card-back h3{
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:601px) and (max-width:1000px) {
+  .cards-container{
+    margin-top: 1vh;
+  }
+  .row1,.row2{
+    margin-top: 0vw;
+  }
+  .flip-card{
+    width: 25%;
+    margin-top: 6vw;
+    height: 30vh;
+  }
+  .card-front h3{
+    font-size: 20px;
+  }
+  .card-back h3{
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width:1001px) and (max-width:1200px){
+  .row1,.row2{
+    margin-top: 5vw;
+  }
+  .flip-card{
+    width: 25%;
+    height: 65vh;
+  }
+  .card-front h3{
+    font-size: 25px;
+    top: 67.5%;
+  }
+  .card-back h3{
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width:1201px) and (max-width:1350px){
+  .row1,.row2{
+    margin-top: 5vw;
+  }
+  .flip-card{
+    width: 25%;
+    height: 60vh;
+  }
+  .card-front h3{
+    font-size: 30px;
+    top: 65%;
+  }
+  .card-back h3{
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width:1351px) and (max-width:1500px){
+  .row1,.row2{
+    margin-top: 5vw;
+  }
+  .flip-card{
+    width: 25%;
+    height: 60vh;
+  }
+  .card-front h3{
+    font-size: 30px;
+    top: 70%;
+  }
+  .card-back h3{
+    font-size: 22px;
+  }
 }
 
 /* footer */
