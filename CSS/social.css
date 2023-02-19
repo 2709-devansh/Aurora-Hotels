@@ -596,22 +596,6 @@ body {
   }
 }
 
-@media screen and (min-width:1201px) and (max-width:1500px){
-  .row1,.row2{
-    margin-top: 5vw;
-  }
-  .flip-card{
-    width: 25%;
-    height: 60vh;
-  }
-  .card-front h3{
-    font-size: 30px;
-  }
-  .card-back h3{
-    font-size: 22px;
-  }
-}
-
 /* footer */
 .footer {
   display: flex;
