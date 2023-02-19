@@ -605,6 +605,12 @@ body {
   }
 }
 
+@media screen and (min-width:1501px){
+  .card-back h3{
+    font-size: 25px;
+  }
+}
+
 /* footer */
 .footer {
   display: flex;
