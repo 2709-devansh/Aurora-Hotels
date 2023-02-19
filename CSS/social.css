@@ -596,6 +596,22 @@ body {
   }
 }
 
+@media screen and (min-width:1001px) and (max-width:1200px) and (min-height:1001px) and (max-height:1400px){
+  .row1,.row2{
+    margin-top: 5vw;
+  }
+  .flip-card{
+    width: 25%;
+    height: 30vh;
+  }
+  .card-front h3{
+    font-size: 25px;
+  }
+  .card-back h3{
+    font-size: 18px;
+  }
+}
+
 @media screen and (min-width:1201px) and (max-width:1500px){
   .card-front h3{
     font-size: 25px;
