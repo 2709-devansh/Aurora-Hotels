@@ -596,6 +596,15 @@ body {
   }
 }
 
+@media screen and (min-width:1201px) and (max-width:1500px){
+  .card-front h3{
+    font-size: 30px;
+  }
+  .card-back h3{
+    font-size: 22px;
+  }
+}
+
 /* footer */
 .footer {
   display: flex;
