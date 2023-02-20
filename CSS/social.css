@@ -1054,16 +1054,7 @@ form{
   }
 }
 
-@media screen and (min-width:2001px) and (max-width:2500px){
-  .input-text input{
-    font-size: 25px;
-  }
-  .input-button input{
-    font-size: 22px;
-  }
-}
-
-@media screen and (min-width:2501px){
+@media screen and (min-width:2001px){
   .input-text input{
     font-size: 25px;
   }
