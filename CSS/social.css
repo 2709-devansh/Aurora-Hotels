@@ -654,6 +654,125 @@ body {
   }
 }
 
+/* form */
+.form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.form-wrapper{
+  width: 90vw;
+}
+
+form{
+  width: 100%;
+}
+
+.input-text{
+  margin-top: 3vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.input-text input{
+  width: 40%;
+  padding: 1.5%;
+  font-family: "josefin sans";
+  color: #454545;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.input-button{
+  margin-top: 5vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+
+.input-button input{
+  padding: 1% 4% 1% 4%;
+  margin-left: 4.5%;
+  font-family: "raleway";
+  font-size: 18px;
+  font-weight: 700;
+  color: #454545;
+  background-color: lightgray;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.2s ease-in-out;
+  border-radius: 5px;
+}
+
+.input-button input:hover{
+  opacity: 1;
+}
+
+@media screen and (max-width:300px){
+  .input-text{
+    flex-direction: column;
+    margin-top: 0vh;
+  }
+  .input-text input{
+    font-size: 15px;
+    margin-top: 3vh;
+    width: 90%;
+    padding: 3%;
+  }
+  .input-button{
+    justify-content: center;
+  }
+  .input-button input{
+    border-radius: 0px;
+    margin-left: 0%;
+    font-size: 16px;
+    padding: 4% 10% 4% 10%;
+  }
+}
+
+@media screen and (min-width:301px) and (max-width:600px){
+  .input-text input{
+    font-size: 15px;
+    padding: 3%;
+  }
+  .input-button input{
+    border-radius: 0px;
+    font-size: 16px;
+    padding: 2% 10% 2% 10%;
+    margin-left: 3%;
+  }
+}
+
+@media screen and (min-width:601px) and (max-width:1000px){
+  .input-text input{
+    font-size: 18px;
+    padding: 3%;
+  }
+  .input-button input{
+    border-radius: 0px;
+    font-size: 16px;
+    padding: 2% 10% 2% 10%;
+    margin-left: 3%;
+  }
+}
+
+@media screen and (min-width:2001px){
+  .input-text input{
+    font-size: 25px;
+  }
+  .input-button input{
+    font-size: 23px;
+  }
+}
+
 /* footer */
 .footer {
   display: flex;
@@ -941,124 +1060,5 @@ body {
   .linkedin,
   .fa.fa-instagram {
     margin-right: 3rem;
-  }
-}
-
-/* form */
-.form-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-}
-
-.form-wrapper{
-  width: 90vw;
-}
-
-form{
-  width: 100%;
-}
-
-.input-text{
-  margin-top: 3vh;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.input-text input{
-  width: 40%;
-  padding: 1.5%;
-  font-family: "josefin sans";
-  color: #454545;
-  font-size: 16px;
-  border-radius: 5px;
-}
-
-.input-button{
-  margin-top: 5vh;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  width: 100%;
-}
-
-.input-button input{
-  padding: 1% 4% 1% 4%;
-  margin-left: 4.5%;
-  font-family: "raleway";
-  font-size: 18px;
-  font-weight: 700;
-  color: #454545;
-  background-color: lightgray;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  transition: 0.2s ease-in-out;
-  border-radius: 5px;
-}
-
-.input-button input:hover{
-  opacity: 1;
-}
-
-@media screen and (max-width:300px){
-  .input-text{
-    flex-direction: column;
-    margin-top: 0vh;
-  }
-  .input-text input{
-    font-size: 15px;
-    margin-top: 3vh;
-    width: 90%;
-    padding: 3%;
-  }
-  .input-button{
-    justify-content: center;
-  }
-  .input-button input{
-    border-radius: 0px;
-    margin-left: 0%;
-    font-size: 16px;
-    padding: 4% 10% 4% 10%;
-  }
-}
-
-@media screen and (min-width:301px) and (max-width:600px){
-  .input-text input{
-    font-size: 15px;
-    padding: 3%;
-  }
-  .input-button input{
-    border-radius: 0px;
-    font-size: 16px;
-    padding: 2% 10% 2% 10%;
-    margin-left: 3%;
-  }
-}
-
-@media screen and (min-width:601px) and (max-width:1000px){
-  .input-text input{
-    font-size: 18px;
-    padding: 3%;
-  }
-  .input-button input{
-    border-radius: 0px;
-    font-size: 16px;
-    padding: 2% 10% 2% 10%;
-    margin-left: 3%;
-  }
-}
-
-@media screen and (min-width:2001px){
-  .input-text input{
-    font-size: 25px;
-  }
-  .input-button input{
-    font-size: 23px;
   }
 }
