@@ -38,10 +38,15 @@
       src="https://kit.fontawesome.com/cacf29784e.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.js"></script>
+    <link
+      href="https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.css"
+      rel="stylesheet"
+    />
     <title>Our Branches</title>
   </head>
   <body>
-    <div class="header">
+    <div class="header" id="header">
       <div class="left">
         <h1>AURORA</h1>
       </div>
@@ -68,7 +73,13 @@
       </div>
     </div>
 
-    <div class="footer">
+    <div class="map-container">
+      <div id="map">
+        <script src="JS/branches-map.js"></script>
+      </div>
+    </div>
+
+    <div class="footer" id="footer">
       <div class="footer_left">
         <h3>&#169 Aurora Hotels. All Rights Reserved</h3>
       </div>
