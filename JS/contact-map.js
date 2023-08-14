@@ -1,6 +1,6 @@
 var map = new maplibregl.Map({
   container: "map",
-  style: "https://api.maptiler.com/maps/streets/style.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL",
+  style: "https://api.maptiler.com/maps/streets/style.json?key=yP6QHdPTvI6ChKCrmE2F	",
   center: [72.880020, 19.116980],
   zoom: 4,
   pitch: 40,
@@ -64,10 +64,5 @@ map.on("load", function () {
       coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
     }
     popup.setLngLat(coordinates).setHTML(description).addTo(map);
-  });
-
-  map.on("mouseleave", "places", function () {
-    map.getCanvas().style.cursor = "";
-    popup.remove();
   });
 });
