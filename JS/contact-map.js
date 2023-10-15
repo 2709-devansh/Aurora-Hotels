@@ -1,7 +1,8 @@
 var map = new maplibregl.Map({
   container: "map",
-  style: "https://api.maptiler.com/maps/streets/style.json?key=yP6QHdPTvI6ChKCrmE2F	",
-  center: [72.880020, 19.116980],
+  style:
+    "https://api.maptiler.com/maps/streets/style.json?key=yP6QHdPTvI6ChKCrmE2F	",
+  center: [72.88002, 19.11698],
   zoom: 4,
   pitch: 40,
   bearing: 20,
@@ -10,7 +11,7 @@ var map = new maplibregl.Map({
 map.on("load", function () {
   //inserting custom marker
   map.loadImage(
-    "https://maplibre.org/maplibre-gl-js-docs/assets/custom_marker.png",
+    "https://maplibre.org/maplibre-gl-js/docs/assets/custom_marker.png",
     function (error, image) {
       if (error) throw error;
       map.addImage("custom-marker", image);
@@ -26,11 +27,12 @@ map.on("load", function () {
         {
           type: "Feature",
           properties: {
-            description: "<p style='color: black; font-size:15px; font-family:josefin sans; text-align:center;'> Marol Maroshi Road, Andheri East, Mumbai, Maharashtra </p>",
+            description:
+              "<p style='color: black; font-size:15px; font-family:josefin sans; text-align:center;'> Marol Maroshi Road, Andheri East, Mumbai, Maharashtra </p>",
           },
           geometry: {
             type: "Point",
-            coordinates: [72.880020, 19.116980],
+            coordinates: [72.88002, 19.11698],
           },
         },
       ],
@@ -64,5 +66,10 @@ map.on("load", function () {
       coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
     }
     popup.setLngLat(coordinates).setHTML(description).addTo(map);
+  });
+
+  map.on("mouseleave", "places", () => {
+    map.getCanvas().style.cursor = "";
+    popup.remove();
   });
 });

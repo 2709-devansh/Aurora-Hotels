@@ -8,10 +8,10 @@ var map = new maplibregl.Map({
 map.on("load", function () {
   //inserting custom marker
   map.loadImage(
-    "https://maplibre.org/maplibre-gl-js-docs/assets/custom_marker.png",
+    'https://maplibre.org/maplibre-gl-js/docs/assets/custom_marker.png',
     function (error, image) {
       if (error) throw error;
-      map.addImage("custom-marker", image);
+      map.addImage('custom-marker', image);
     }
   );
 
@@ -24,7 +24,7 @@ map.on("load", function () {
         {
           type: "Feature",
           properties: {
-            description: "<a href='./index.html' style='text-decoration:none; border:none;'><p style='border:none; color: black; font-size:x-large; font-family:josefin sans; text-align:center; margin-right:10px;margin-left:10px;'>Mumbai</p></a><p style='color:gray;font-size:small;font-family:josefin sans;text-align:center;margin-top:-20px;'>(Click on the Name to Visit!)</p>",
+            description: "<a href='./index.html' style='text-decoration:none; border:none;'><p style='border:none; color: black; font-size:x-large; font-family:josefin sans; text-align:center; margin-right:10px;margin-left:10px;'>Mumbai</p></a>",
           },
           geometry: {
             type: "Point",
@@ -34,7 +34,7 @@ map.on("load", function () {
         {
           type: "Feature",
           properties: {
-            description: "<a href='./index.html' style='text-decoration:none; border:none;'><p style='border:none; color: black; font-size:x-large; font-family:josefin sans; text-align:center; margin-right:10px;margin-left:10px;'>Bhopal</p></a><p style='color:gray;font-size:small;font-family:josefin sans;text-align:center;margin-top:-20px;'>(Click on the Name to Visit!)</p>",
+            description: "<a href='./index.html' style='text-decoration:none; border:none;'><p style='border:none; color: black; font-size:x-large; font-family:josefin sans; text-align:center; margin-right:10px;margin-left:10px;'>Bhopal</p></a>",
           },
           geometry: {
             type: "Point",
@@ -44,7 +44,7 @@ map.on("load", function () {
         {
           type: "Feature",
           properties: {
-            description: "<a href='./index.html' style='text-decoration:none; border:none;'><p style='border:none; color: black; font-size:x-large; font-family:josefin sans; text-align:center; margin-right:10px;margin-left:10px;'>Indore</p></a><p style='color:gray;font-size:small;font-family:josefin sans;text-align:center;margin-top:-20px;'>(Click on the Name to Visit!)</p>",
+            description: "<a href='./index.html' style='text-decoration:none; border:none;'><p style='border:none; color: black; font-size:x-large; font-family:josefin sans; text-align:center; margin-right:10px;margin-left:10px;'>Indore</p></a>",
           },
           geometry: {
             type: "Point",
@@ -54,7 +54,7 @@ map.on("load", function () {
         {
           type: "Feature",
           properties: {
-            description: "<a href='./index.html' style='text-decoration:none; border:none;'><p style='border:none; color: black; font-size:x-large; font-family:josefin sans; text-align:center; margin-right:10px;margin-left:10px;'>Delhi</p></a><p style='color:gray;font-size:small;font-family:josefin sans;text-align:center;margin-top:-20px;'>(Click on the Name to Visit!)</p>",
+            description: "<a href='./index.html' style='text-decoration:none; border:none;'><p style='border:none; color: black; font-size:x-large; font-family:josefin sans; text-align:center; margin-right:10px;margin-left:10px;'>Delhi</p></a>",
           },
           geometry: {
             type: "Point",
@@ -64,7 +64,7 @@ map.on("load", function () {
         {
           type: "Feature",
           properties: {
-            description: "<a href='./index.html' style='text-decoration:none; border:none;'><p style='border:none; color: black; font-size:x-large; font-family:josefin sans; text-align:center; margin-right:10px;margin-left:10px;'>Raipur</p></a><p style='color:gray;font-size:small;font-family:josefin sans;text-align:center;margin-top:-20px;'>(Click on the Name to Visit!)</p>",
+            description: "<a href='./index.html' style='text-decoration:none; border:none;'><p style='border:none; color: black; font-size:x-large; font-family:josefin sans; text-align:center; margin-right:10px;margin-left:10px;'>Raipur</p></a>",
           },
           geometry: {
             type: "Point",
@@ -74,7 +74,7 @@ map.on("load", function () {
         {
           type: "Feature",
           properties: {
-            description: "<a href='./index.html' style='text-decoration:none; border:none;'><p style='border:none; color: black; font-size:x-large; font-family:josefin sans; text-align:center; margin-right:10px;margin-left:10px;'>Vadodara</p></a><p style='color:gray;font-size:small;font-family:josefin sans;text-align:center;margin-top:-20px;'>(Click on the Name to Visit!)</p>",
+            description: "<a href='./index.html' style='text-decoration:none; border:none;'><p style='border:none; color: black; font-size:x-large; font-family:josefin sans; text-align:center; margin-right:10px;margin-left:10px;'>Vadodara</p></a>",
           },
           geometry: {
             type: "Point",
@@ -84,7 +84,7 @@ map.on("load", function () {
         {
           type: "Feature",
           properties: {
-            description: "<a href='./index.html' style='text-decoration:none; border:none;'><p style='border:none; color: black; font-size:x-large; font-family:josefin sans; text-align:center; margin-right:10px;margin-left:10px;'>Dehradun</p></a><p style='color:gray;font-size:small;font-family:josefin sans;text-align:center;margin-top:-20px;'>(Click on the Name to Visit!)</p>",
+            description: "<a href='./index.html' style='text-decoration:none; border:none;'><p style='border:none; color: black; font-size:x-large; font-family:josefin sans; text-align:center; margin-right:10px;margin-left:10px;'>Dehradun</p></a>",
           },
           geometry: {
             type: "Point",
@@ -94,7 +94,7 @@ map.on("load", function () {
         {
           type: "Feature",
           properties: {
-            description: "<a href='./index.html' style='text-decoration:none; border:none;'><p style='border:none; color: black; font-size:x-large; font-family:josefin sans; text-align:center; margin-right:10px;margin-left:10px;'>Kolkata</p></a><p style='color:gray;font-size:small;font-family:josefin sans;text-align:center;margin-top:-20px;'>(Click on the Name to Visit!)</p>",
+            description: "<a href='./index.html' style='text-decoration:none; border:none;'><p style='border:none; color: black; font-size:x-large; font-family:josefin sans; text-align:center; margin-right:10px;margin-left:10px;'>Kolkata</p></a>",
           },
           geometry: {
             type: "Point",
@@ -104,7 +104,7 @@ map.on("load", function () {
         {
           type: "Feature",
           properties: {
-            description: "<a href='./index.html' style='text-decoration:none; border:none;'><p style='border:none; color: black; font-size:x-large; font-family:josefin sans; text-align:center; margin-right:10px;margin-left:10px;'>Ahemdabad</p></a><p style='color:gray;font-size:small;font-family:josefin sans;text-align:center;margin-top:-20px;'>(Click on the Name to Visit!)</p>",
+            description: "<a href='./index.html' style='text-decoration:none; border:none;'><p style='border:none; color: black; font-size:x-large; font-family:josefin sans; text-align:center; margin-right:10px;margin-left:10px;'>Ahemdabad</p></a>",
           },
           geometry: {
             type: "Point",
@@ -114,7 +114,7 @@ map.on("load", function () {
         {
           type: "Feature",
           properties: {
-            description: "<a href='./index.html' style='text-decoration:none; border:none;'><p style='border:none; color: black; font-size:x-large; font-family:josefin sans; text-align:center; margin-right:10px;margin-left:10px;'>Aurangabad</p></a><p style='color:gray;font-size:small;font-family:josefin sans;text-align:center;margin-top:-20px;'>(Click on the Name to Visit!)</p>",
+            description: "<a href='./index.html' style='text-decoration:none; border:none;'><p style='border:none; color: black; font-size:x-large; font-family:josefin sans; text-align:center; margin-right:10px;margin-left:10px;'>Aurangabad</p></a>",
           },
           geometry: {
             type: "Point",
@@ -124,7 +124,7 @@ map.on("load", function () {
         {
           type: "Feature",
           properties: {
-            description: "<a href='./index.html' style='text-decoration:none; border:none;'><p style='border:none; color: black; font-size:x-large; font-family:josefin sans; text-align:center; margin-right:10px;margin-left:10px;'>Chennai</p></a><p style='color:gray;font-size:small;font-family:josefin sans;text-align:center;margin-top:-20px;'>(Click on the Name to Visit!)</p>",
+            description: "<a href='./index.html' style='text-decoration:none; border:none;'><p style='border:none; color: black; font-size:x-large; font-family:josefin sans; text-align:center; margin-right:10px;margin-left:10px;'>Chennai</p></a>",
           },
           geometry: {
             type: "Point",
@@ -152,7 +152,7 @@ map.on("load", function () {
     closeOnClick: true,
   });
 
-  map.on("click", "places", function (e) {
+  map.on("mouseenter", "places", function (e) {
     map.getCanvas().style.cursor = "pointer";
 
     var coordinates = e.features[0].geometry.coordinates.slice();
